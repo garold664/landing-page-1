@@ -18,7 +18,7 @@
     <header class="primary-header">
       <div class="container">
         <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-        <nav class="primary-navigation">
+        <nav aria-label="Primary" class="primary-navigation">
           <ul class="nav-list" role="list">
             <li><a href="#" class="nav-link">Pricing</a></li>
             <li><a href="#" class="nav-link">Product</a></li>
@@ -117,6 +117,42 @@
         </div>
       </section>
     </main>
+    <footer class="bg-neutral-900 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+            <ul role="list" aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="pinterest" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+            </ul>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <ul aria-label="Footer" role="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <input type="email" />
+              <button class="button">Go</button>
+            </form>
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
