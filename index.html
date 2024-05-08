@@ -17,17 +17,29 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-        <nav aria-label="Primary" class="primary-navigation">
-          <ul class="nav-list" role="list">
-            <li><a href="#" class="nav-link">Pricing</a></li>
-            <li><a href="#" class="nav-link">Product</a></li>
-            <li><a href="#" class="nav-link">About Us</a></li>
-            <li><a href="#" class="nav-link">Careers</a></li>
-            <li><a href="#" class="nav-link">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <img src="images/icon-hamburger.svg" alt="" aria-hidden="true" />
+            <img
+              class="icon-close"
+              src="images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav aria-label="Primary" class="primary-navigation">
+            <ul class="nav-list" role="list" id="primary-navigation">
+              <li><a href="#" class="nav-link">Pricing</a></li>
+              <li><a href="#" class="nav-link">Product</a></li>
+              <li><a href="#" class="nav-link">About Us</a></li>
+              <li><a href="#" class="nav-link">Careers</a></li>
+              <li><a href="#" class="nav-link">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button" style="display: none">Get Started</button>
+        </div>
       </div>
     </header>
 

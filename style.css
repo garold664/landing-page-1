@@ -121,6 +121,19 @@ svg {
 
 /* Utility classes */
 
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 .text-primary-400 {
   color: var(--clr-primary-400);
 }
@@ -252,5 +265,44 @@ body {
   &:hover,
   &:focus-visible {
     background-color: var(--clr-accent-300);
+  }
+}
+
+/* Nav */
+
+.primary-header {
+  margin-top: var(--size-700);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    z-index: 1000;
+  }
+
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+}
+
+@media (min-width: 50em) {
+  .mobile-nav-toggle {
+    display: none;
   }
 }
