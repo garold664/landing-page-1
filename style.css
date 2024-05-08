@@ -288,6 +288,11 @@ body {
     display: none;
   }
 
+  .primary-navigation[data-visible] {
+    display: block;
+    position: fixed;
+  }
+
   .mobile-nav-toggle {
     display: block;
     cursor: pointer;
