@@ -270,15 +270,20 @@ p[data-width='wide'] {
 .even-columns {
   display: grid;
   gap: 1rem;
-}
 
-@media (min-width: 50em) {
-  /* 800px */
-
-  .even-columns {
+  @media (min-width: 50em) {
+    /* 800px */
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.vertical-align-center {
+  align-items: center;
 }
 
 .visually-hidden {
