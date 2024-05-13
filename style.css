@@ -274,6 +274,20 @@ p[data-width='wide'] {
   }
 }
 
+/* Footer */
+
+.footer-nav {
+  columns: 2;
+  a {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+  }
+
+  a:is(:hover, :focus-visible) {
+    color: var(--clr-accent-400);
+  }
+}
+
 /* Utility classes */
 
 .container {
