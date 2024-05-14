@@ -148,15 +148,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer | padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer
+      class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100"
+    >
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-            <ul role="list" aria-label="social links">
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="social-list" role="list" aria-label="social links">
               <li>
                 <a aria-label="facebook" href="#">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use
                       xlink:href="images/social-icons.svg#icon-facebook"
                     ></use>
@@ -165,7 +171,7 @@
               </li>
               <li>
                 <a aria-label="youtube" href="#">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use
                       xlink:href="images/social-icons.svg#icon-youtube"
                     ></use>
@@ -174,7 +180,7 @@
               </li>
               <li>
                 <a aria-label="twitter" href="#">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use
                       xlink:href="images/social-icons.svg#icon-twitter"
                     ></use>
@@ -183,7 +189,7 @@
               </li>
               <li>
                 <a aria-label="pinterest" href="#">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use
                       xlink:href="images/social-icons.svg#icon-pinterest"
                     ></use>
@@ -192,7 +198,7 @@
               </li>
               <li>
                 <a aria-label="instagram" href="#">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use
                       xlink:href="images/social-icons.svg#icon-instagram"
                     ></use>
@@ -201,7 +207,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
               <ul aria-label="Footer" role="list">
                 <li><a href="#">Home</a></li>
@@ -214,13 +220,14 @@
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
               <input type="email" />
-              <button class="button">Go</button>
+              <button class="button" data-glow="none">Go</button>
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p class="only-desktop">Copyright 2020. All Rights Reserved</p>
           </div>
+          <p class="only-mobile">Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </footer>
