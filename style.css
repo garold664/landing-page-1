@@ -338,6 +338,10 @@ p[data-width='wide'] {
       flex-direction: column;
       justify-content: space-between;
     }
+    .primary-footer-form {
+      /* justify-content: end; */
+      justify-items: end;
+    }
   }
 }
 
