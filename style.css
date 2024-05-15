@@ -209,6 +209,7 @@ p[data-width='wide'] {
   .primary-navigation {
     display: none;
     position: fixed;
+    z-index: 1000;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
