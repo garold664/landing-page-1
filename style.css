@@ -383,6 +383,12 @@ p[data-width='wide'] {
   form {
     display: flex;
     gap: var(--size-300);
+    flex-wrap: wrap;
+
+    & > * {
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
 
   input:where([type='text'], [type='email']) {
