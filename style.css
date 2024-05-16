@@ -542,7 +542,35 @@ p[data-width='wide'] {
   width: 100px;
 }
 
-/* Utility classes */
+/*# image with blob bg */
+
+.hero__image {
+  /* position: relative; */
+  @media (max-width: 50em) {
+    order: -1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 87%;
+    max-height: 70vh;
+    max-height: 70dvh;
+    aspect-ratio: 1 / 1.2;
+    z-index: -1;
+    background: url(images/bg-tablet-pattern.svg) bottom left / auto no-repeat;
+  }
+
+  @media (min-width: 50em) {
+    &::before {
+      width: 48%;
+    }
+  }
+}
+
+/*# Utility classes */
 
 .container {
   --max-width: 1110px;
@@ -701,6 +729,10 @@ p[data-width='wide'] {
 
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .display-sm-none {
