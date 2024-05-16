@@ -551,7 +551,7 @@ p[data-width='wide'] {
   width: 100px;
 }
 
-/*# image with blob bg */
+/*# Hero image */
 
 .hero__image {
   /* position: relative; */
@@ -579,6 +579,22 @@ p[data-width='wide'] {
   }
 }
 
+/*# Sales Points */
+
+.sales-points {
+  position: relative;
+  &::before {
+    content: url('images/bg-tablet-pattern.svg');
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    bottom: 90%;
+    right: 0;
+    outline: 1px solid;
+    zoom: 25%;
+  }
+}
 /*# Utility classes */
 
 .container {
