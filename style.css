@@ -44,7 +44,7 @@
   --size-900: 4rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   :root {
     --fs-body: var(--fs-500);
     --fs-primary-heading: var(--fs-900);
@@ -253,7 +253,7 @@ p[data-width='wide'] {
     }
   }
 }
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .mobile-nav-toggle {
     display: none;
   }
@@ -345,7 +345,7 @@ p[data-width='wide'] {
     opacity: 0.1;
   }
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     text-align: left;
   }
 }
@@ -402,7 +402,7 @@ p[data-width='wide'] {
     margin-inline: auto;
   }
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     grid-template-areas: 'logo-social nav form';
 
     & > * {
@@ -437,7 +437,7 @@ p[data-width='wide'] {
   display: flex;
   gap: var(--size-600);
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     gap: var(--size-300);
   }
 }
@@ -448,7 +448,7 @@ p[data-width='wide'] {
   fill: var(--clr-neutral-100);
   /* fill: var(--clr-accent-400); */
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     width: var(--size-500);
   }
 }
@@ -476,7 +476,7 @@ p[data-width='wide'] {
     }
   }
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     & > * {
       width: 35%;
     }
@@ -563,7 +563,7 @@ p[data-width='wide'] {
     background: url(images/bg-tablet-pattern.svg) bottom left / auto no-repeat;
   }
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     &::before {
       width: 48%;
     }
@@ -591,7 +591,7 @@ p[data-width='wide'] {
 }
 
 .only-mobile {
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     display: none;
   }
 }
@@ -600,7 +600,7 @@ p[data-width='wide'] {
   display: grid;
   gap: 1rem;
 
-  @media (min-width: 50em) {
+  @media (min-width: 47em) {
     /* 800px */
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -611,7 +611,7 @@ p[data-width='wide'] {
   justify-self: end;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .justify-self-end-md {
     justify-self: end;
   }
@@ -739,7 +739,7 @@ p[data-width='wide'] {
   display: none;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .display-md-inline-flex {
     display: inline-flex;
   }
