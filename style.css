@@ -188,10 +188,9 @@ p[data-width='wide'] {
   display: flex;
   justify-content: space-between;
 }
-
-/* .logo:hover {
-  /* --logo-color: red; 
-} */
+.logo:hover {
+  --logo-color: var(--clr-accent-400);
+}
 
 .mobile-nav-toggle {
   display: none;
