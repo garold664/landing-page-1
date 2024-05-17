@@ -189,6 +189,10 @@ p[data-width='wide'] {
   justify-content: space-between;
 }
 
+/* .logo:hover {
+  /* --logo-color: red; 
+} */
+
 .mobile-nav-toggle {
   display: none;
 }
