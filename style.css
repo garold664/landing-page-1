@@ -81,14 +81,14 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html {
+/* html {
   overflow-x: hidden;
-}
+} */
 
 html,
 body {
-  height: 100%;
-  /* overflow: hidden; */
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 /* Set core body defaults */
