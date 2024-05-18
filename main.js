@@ -14,15 +14,18 @@ navToggle.addEventListener('click', () => {
 const slider = new A11YSlider(document.querySelector('.slider'), {
   adaptiveHeight: true,
   dots: true,
-  // slidesToShow: 1,
+  slidesToShow: 1,
   centerMode: true,
   arrows: false,
 
   responsive: {
-    480: {
-      // slidesToShow: 4,
+    752: {
+      slidesToShow: 3,
       dots: false,
       // arrows: true,
     },
   },
 });
+// setTimeout(() => {
+//   slider.scrollToSlide(1);
+// }, 500);
