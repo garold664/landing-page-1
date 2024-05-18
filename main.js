@@ -9,6 +9,14 @@ navToggle.addEventListener('click', () => {
     : navToggle.setAttribute('aria-expanded', true);
   primaryNav.toggleAttribute('data-visible');
   primaryHeader.toggleAttribute('data-overlay');
+
+  if (primaryNav.hasAttribute('data-visible')) {
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+  }
 });
 
 const slider = new A11YSlider(document.querySelector('.slider'), {
